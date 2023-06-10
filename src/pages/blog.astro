@@ -1,8 +1,19 @@
-<body>
-     <a href="/">Home</a>
-     <a href="/about/">About</a>
-     <a href="/blog/">Blog</a>
-   
-     <h1>sjarvis.com</h1>
-     <h2>blog</h2>
-   </body>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const pageTitle = "Blog";
+---
+
+
+<BaseLayout pageTitle={pageTitle}>
+
+     <h2>My Astro Learning Blog</h2>
+     <p>This is where I will post about my journey learning Astro.</p>
+     <ul>
+      {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+    </ul>
+
+
+ </BaseLayout>
+    

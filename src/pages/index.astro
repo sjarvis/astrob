@@ -1,25 +1,14 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import Greeting from '../components/Greeting.jsx';
+
+const pageTitle = "Home Page";
 ---
+<BaseLayout pageTitle={pageTitle}>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type ="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content = {Astro.generator} >
-    <title>Astro</title>
-  </head>
-  <body>
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 
-	<a href="/">Home</a>
-     <a href="/about/">About</a>
-     <a href="/blog/">Blog</a>
-
-
-	
-    <h1>sjarvis.com</h1>
-    <h3>my astro-powered testing blog</h3>
-
-
-  </body>
-</html>
+  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+ 
+</BaseLayout>
