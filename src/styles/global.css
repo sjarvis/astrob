@@ -1,3 +1,8 @@
+
+body {
+  font-family: system-ui;
+}
+
 /* nav styles */
 .hamburger {
   padding-right: 20px;
@@ -50,7 +55,7 @@ html.dark {
 
 
 main {
-  width: min(65ch , 100% - 4rem);
+  width: min(85ch , 100% - 4rem);
   margin-inline: auto;
 }
 
