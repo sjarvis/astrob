@@ -10,9 +10,6 @@ image:
 tags: ["astro", "Netlify", "GitHub"]
 ---
 
-
-
-
 I am learning to deploy an Astro site to the web with GitHub to Netlify.
 
 This is a frustrating process.
