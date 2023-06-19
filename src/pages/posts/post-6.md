@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My Sixt Blog Post'
+title: 'My Sixth Blog Post'
 pubDate: 2023-06-19
 description: "learning to deploy an Astro site to the web with GitHub and Netlify"
 author: 'Astro Learner'
